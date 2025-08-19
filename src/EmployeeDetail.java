@@ -3,6 +3,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
+//Employee Work details
 public class EmployeeDetail {
     private final String id;
     private int age;

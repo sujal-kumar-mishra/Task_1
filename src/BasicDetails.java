@@ -1,4 +1,6 @@
+//for handing CRUD operation for basic details
 public class BasicDetails {
+    //for creating employee work details
     public void create(Employee e) {
         if (!Main.emp.containsKey(e.getId())) {
             Main.emp.put(e.getId(), e);
@@ -6,6 +8,7 @@ public class BasicDetails {
         } else System.out.println("Details of employee having ID " + e.getId() + " is already present.");
     }
 
+    //for Retrieving the employee data using Employee ID
     public void read(String id) {
         if (Main.emp.containsKey(id)) {
             Employee e = Main.emp.get(id);
@@ -17,6 +20,7 @@ public class BasicDetails {
         } else System.out.println("Details of employee does not exist in database!");
     }
 
+    //Updating Employee basic details using ID
     public void update(String id, String name, ROLE role, String reportingTo) {
         if (Main.emp.containsKey(id)) {
             Employee e = Main.emp.get(id);
@@ -29,7 +33,7 @@ public class BasicDetails {
             System.out.println("Employee Details does not exist in database!");
         }
     }
-
+    //Deleting Employee Basic details and Work Details also along with it
     public void delete(String id) {
         if (Main.emp.containsKey(id)) {
             Main.emp.remove(id);

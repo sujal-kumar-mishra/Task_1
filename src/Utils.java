@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
+//Utility functions used in main function
 public class Utils {
+    //Main menu interface
     public static int showMainMenu(Scanner sc) {
         System.out.println("\nHi, Let's begin!");
         System.out.println("1. Work Details");
@@ -14,6 +16,7 @@ public class Utils {
         return sc.nextInt();
     }
 
+    //Displays and handle Employee Work Details Interface
     public static void handleWorkDetails(Scanner sc, WorkDetails wd) {
         while (true) {
             System.out.println("\nWork Details:");
@@ -81,6 +84,7 @@ public class Utils {
         }
     }
 
+    //Displays and handle Employee Basic Details Interface
     public static void handleBasicDetails(Scanner sc, BasicDetails bs) {
         while (true) {
             System.out.println("\nBasic Details:");
