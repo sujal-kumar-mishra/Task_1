@@ -1,5 +1,5 @@
 //for handing CRUD operation for basic details
-public class BasicDetails {
+public class BasicDetails implements Operations{
     //for creating employee work details
     public void create(Employee e) {
         if (!Main.emp.containsKey(e.getId())) {

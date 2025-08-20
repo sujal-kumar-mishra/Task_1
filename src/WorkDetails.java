@@ -1,5 +1,5 @@
 //for handing CRUD operation for work details
-public class WorkDetails {
+public class WorkDetails implements Operations{
     //for creating employee work details
     public void create(EmployeeDetail e) {
         if (!Main.empDet.containsKey(e.getId())) {
